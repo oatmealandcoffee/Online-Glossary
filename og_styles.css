@@ -1,0 +1,308 @@
+body {
+	text-align: left;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #666;
+}
+
+a:hover {
+	color: #333;
+}
+
+#container {
+	width: 100%;
+	margin: auto;
+}
+
+#header {
+	width: 800px;
+	height: 82px;
+	position: relative;
+	margin: auto;
+}
+
+#search {
+	float: right;
+	margin-top: 25px;
+}
+
+#contentArea {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	padding: 20px 0;
+}
+
+#contentFloat {
+	width: 800px;
+	margin: auto;
+	padding-top: 15px;
+}
+
+#contentFloat h2 {
+	font-size: 13pt;
+	color: #3d8dae;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#welcome {
+	width: 191px;
+	padding-right: 15px;
+}
+
+#welcome h1 {
+	font-size: 20pt;
+	color: #999;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#alphaListing {
+	width: 576px;
+}
+
+#alphaListing h2 {
+	font-size: 13pt;
+	color: #3d8dae;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#alphaListing p {
+	font-size: 10pt;
+	color: #cccccc;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#alphaListing a {
+	font-size: 10pt;
+	color: #666;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#chapterListing h2 {
+	font-size: 13pt;
+	color: #3d8dae;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#welcome p {
+	font-size: 9pt;
+	line-height: 12pt;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+}
+
+#chapterListing {
+	width: 576px;
+}
+
+#chapterListing p {
+	font-size: 12pt;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#chapterListing ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#chapterListing li {
+	list-style: none;
+	margin: 0;
+	padding: 5px 0;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 8pt;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+#footer {
+	width: 800px;
+	margin: auto;
+	padding-top: 15px;
+	position: relative;
+}
+
+#logo {
+	float: left;
+}
+
+#copyright {
+	font-size: 7pt;
+	line-height: 10pt;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	float: left;
+	padding-left: 15px;
+	padding-top: 38px;
+}
+
+.mainLayoutTable {
+	padding: 0px;
+	max-width: 800px;
+	min-width: 588px;
+	width: 800px;
+
+
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.fullViewTableLayout {
+	padding: 0;
+    max-width: 1000px;
+	min-width: 494px;
+
+	border-width: 0px;
+	border-color: #000000;
+	border-style: solid;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.fullViewFigureTitle {
+	background: #3d8dae;
+	color: #FFF;
+	padding: 5px;
+}
+
+.fullViewFigureInfo {
+	font-size: 9pt;
+	line-height: 12pt;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	padding: 5px;
+}
+
+.keyFigureReviewInformation {
+	/*
+	border-width: 1px;
+	border-style: solid;
+	*/
+}
+
+.chapterLabel {
+	/*
+	border-width: 1px;
+	border-color: #66ffcc;
+	border-style: solid;
+	*/
+	font-size: 15pt;
+	color: #3d8dae;
+	font-weight: bold;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+.figureTable {
+	/*
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: solid;
+	*/
+}
+
+.figureTableCell {
+	border-color: #e0e0e0;
+	border-width: 1px;
+	border-style: solid;
+	width: auto;
+	text-align: left;
+	background: #FFF;
+	padding: 0 10px;
+
+}
+
+.figureTableCell:hover {
+	background: #e0ebeb;
+	border-color: #999999;
+	border-width: 1px;
+	border-style: solid;
+
+}
+
+.figureThumbnailImage {
+	text-align: left;
+}
+
+.figureThumbnailCallout {
+	text-align: left;
+
+	/*
+	border-width: 1px;
+	border-color: #ff6fcf;
+	border-style: solid;
+	*/
+}
+
+.figureThumbnailTitle
+{
+    font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color:  #666666
+
+}
+
+.glossaryTable {
+	width: 800px;
+	margin: 24px 6px 6px 6px;
+	background-color: #FFFFFF;
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: solid;
+	border-collapse: collapse;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+.glossaryTable th {
+	padding: 6px;
+}
+
+.glossaryTable td {
+	padding: 6px;
+}
+
+.termHeader {
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: solid;
+	width: 25%;
+}
+
+.definitionHeader {
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: solid;
+}
+
+.mediaHeader {
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: solid;
+	width: 10%;
+}
+
+.termCell {
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: solid;
+}
+
+.definitionCell {
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: solid;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<title>Online Glossary</title>
+
+	<!-- load the framework -->
+	<link rel=stylesheet type="text/css" href="og_styles.css" media=screen>
+	<script type="text/javascript" src="og_content.js"></script>
+	<script type="text/javascript" src="og_engine.js"></script>
+
+	<!-- init the framework -->
+	<script type="text/javascript">
+		populateTermIndexHash();
+	</script>
+
+	<!-- capture enter key in search field to initiate search -->
+	<script type="text/javascript">
+		document.onkeypress = processKey;
+		function processKey(e)
+		{
+		  if (null == e)
+			e = window.event ;
+		  if (e.keyCode == 13)  {
+			prepSearch( document.getElementById('searchInput').value );
+		  }
+		}
+	</script>
+
+</head>
+<body>
+
+<noscript>Javascript must be enabled to use this component.</noscript>
+
+    <div id="container">
+		<div id="header">
+		<h1><a href="index.html">Online Glossary</a></h1>
+			<div id="search">
+				<!-- Search Form -->
+				<label for="searchTerms">Search titles and captions:</label><br />
+				<input type="text" name="searchTerms" id="searchInput" value="" placeholder=""/>
+				<button type="button" onmouseup="javascript: prepSearch( document.getElementById('searchInput').value )" id="searchButton">Search</button>
+			</div>
+		</div>
+
+		<div id="contentArea">
+			<table width="800" cellpadding="0" cellspacing="0" align="center">
+				<tr valign="top">
+					<td width="191">
+					</td>
+					<td width="576">
+
+						<div id="alphaListing">
+							<h2>Alphabet Listing</h2>
+							<script type="text/javascript">document.write( createAlphaList() );</script>
+						</div>
+
+						<!--  Automate with createChapterLinkList() within a document.write-->
+						<div id="chapterListing">
+							<h2>Chapter Listing</h2>
+							<script type="text/javascript">document.write( createChapterLinkList() );</script>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div><!--End contentArea-->
+
+	<p class="clear"></p>
+
+</body>
+</html>

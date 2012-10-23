@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<title>Online Glossary</title>
+
+	<!-- load the framework -->
+	<link rel=stylesheet type="text/css" href="og_styles.css" media=screen>
+	<script type="text/javascript" src="og_content.js"></script>
+	<script type="text/javascript" src="og_engine.js"></script>
+
+	<!-- init the framework -->
+	<script type="text/javascript">
+		populateTermIndexHash();
+	</script>
+
+	<!-- capture enter key in search field to initiate search -->
+	<script type="text/javascript">
+		document.onkeypress = processKey;
+		function processKey(e)
+		{
+		  if (null == e)
+			e = window.event ;
+		  if (e.keyCode == 13)  {
+			prepSearch( document.getElementById('searchInput').value );
+		  }
+		}
+	</script>
+
+	<script type="text/javascript">
+<!--
+// original code by Bill Trefzger 12/12/96
+function go1(){
+if (document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value != "none") {
+location = document.selecter1.select1.options[document.selecter1.select1.selectedIndex].value
+		}
+	}
+//-->
+</script>
+
+</head>
+
+<body>
+	<noscript>Javascript must be enabled to use this component.</noscript>
+	<div id="container">
+		<div id="header">
+		<h1><a href="index.html">Online Glossary</a></h1>
+			<div id="search">
+			<!-- Search Form -->
+			<label for="searchTerms">Search titles and captions:</label><br />
+			<input type="text" name="searchTerms" id="searchInput" value="" placeholder=""/>
+			<button type="button" onmouseup="javascript: prepSearch( document.getElementById('searchInput').value )" id="searchButton">Search</button>
+			</div>
+		</div>
+		<div id="contentArea">
+
+			<div id="contentFloat">
+				<h2>Alphabet Listing</h2>
+				<div id="alphaListing">
+					<script type="text/javascript">document.write( createAlphaList() );</script>
+				</div>
+			</div>
+
+			<div id="contentFloat">
+				<script type="text/javascript">
+				<!--
+				document.write('<form name="selecter1"><select name="select1" size=1>');
+				document.write('<option value=none>Jump to Chapter');
+				document.write('<option value=none>--------------------');
+				document.write( createChapterLinkPullDownMenu() );
+				document.write('</select>');
+				document.write('  <input type="button" value="Go" onclick="go1()">');
+				document.write('</form>');
+				// end hiding contents -->
+				</script>
+
+				<script type="text/javascript">
+					document.write( searchWithResults( document.URL ) );
+				</script>
+			</div>
+			<p class="clear"></p>
+		</div>
+	</div>
+
+</body>
+</html>
